@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <RootNamespace>CityFix</RootNamespace>
+    <AssemblyName>CityFix</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Бібліотека для роботи з MySQL -->
+    <PackageReference Include="MySqlConnector" Version="2.4.0" />
+    <!-- Бібліотека для створення Excel-файлів -->
+    <PackageReference Include="ClosedXML" Version="0.104.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Forms\MainForm.cs" SubType="Form" />
+    <Compile Update="Forms\RequestForm.cs" SubType="Form" />
+    <Compile Update="Forms\DispatcherForm.cs" SubType="Form" />
+    <Compile Update="Forms\MasterForm.cs" SubType="Form" />
+    <Compile Update="Forms\AnalyticsForm.cs" SubType="Form" />
+    <Compile Update="Forms\PhotoViewForm.cs" SubType="Form" />
+  </ItemGroup>
+
+</Project>
